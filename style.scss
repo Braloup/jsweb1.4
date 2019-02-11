@@ -1,10 +1,25 @@
-
 /*
   Import the common theme.
 */
 @import "./_shared/scss/theme.scss";
-
 /*
   If you need some CSS for any reason you can put it here.
 */
 
+label {
+
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+}
+
+#bYear {
+  width: 60px;
+}
+
+#bMonth {
+  width: 45px;
+}
+
+#bDay {
+  width: 45px;
+}

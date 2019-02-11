@@ -3,7 +3,28 @@
 {% extends "_common.njk" %}
 
 {% block content %}
-<p>
-  <i class="fas fa-arrow-right"></i> Insert content here. <i class="fas fa-arrow-left"></i>
-</p>
+
+
+
+  <form class="birthDay" action="index.njk" method="post">
+
+    <div class="form">
+      <label for="bYear">Enter the year was you born:</label>
+      <input type="number" id="bYear" name="bYear" min="1920" max="2025">
+    </div>
+
+  <div class="form">
+    <label for="bMonth">Enter the month was you born:</label>
+    <input type="number" id="bMonth" name="bMonth" min="1" max="12">
+  </div>
+
+    <div class="form">
+      <label for="bDay">Enter the day was you born:</label>
+      <input type="number" id="bDay" name="bDay" min="1" max="31">
+    </div>
+
+  </form>
+
+
+
 {% endblock %}
