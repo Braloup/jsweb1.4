@@ -10,3 +10,12 @@ import 'bootstrap';
 */
 
 console.log("Hey look in your browser console. It works!");
+
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth();
+let day = date.getDay();
+console.log(year);
+console.log(month + 1);
+console.log(day);
+console.log(date);
