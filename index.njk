@@ -4,30 +4,27 @@
 
 {% block content %}
 
+<form class="birthDay" action="index.njk" method="post">
 
-
-  <form class="birthDay" action="index.njk" method="post">
-
-    <div class="form">
-      <label for="bYear">Enter the year was you born:</label>
-      <input type="number" id="bYear" name="bYear" min="1920" max="2025">
-    </div>
+  <div class="form">
+    <label for="bYear">Enter the year was you born:</label>
+    <input type="number" id="bYear" name="bYear" min="1920" max="2025">
+  </div>
 
   <div class="form">
     <label for="bMonth">Enter the month was you born:</label>
     <input type="number" id="bMonth" name="bMonth" min="1" max="12">
   </div>
 
-    <div class="form">
-      <label for="bDay">Enter the day was you born:</label>
-      <input type="number" id="bDay" name="bDay" min="1" max="31">
-    </div>
+  <div class="form">
+    <label for="bDay">Enter the day was you born:</label>
+    <input type="number" id="bDay" name="bDay" min="1" max="31">
+  </div>
 
-    <button id="calcul" type="button" class="butn" name="calcul">Calcul âge</button>
+  <button id="calcul" type="button" class="butn" name="calcul">Calcul âge</button>
 
+</form>
 
-  </form>
-
-
+<p class="result"></p>
 
 {% endblock %}
